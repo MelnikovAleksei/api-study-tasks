@@ -2,5 +2,5 @@
 
 const div = document.querySelector('div');
 
-let width = window.innerWidth;
-let height = window.innerHeight;
+let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
