@@ -6,7 +6,7 @@ verseChoose.onchange = function () {
     updateDisplay(verse)
 }
 
-function updateDisplay(verseChoose) {
+function updateDisplay(verse) {
     verse = verse.replace(" ", "");
     verse = verse.toLowerCase();
     let url = verse + '.txt';
