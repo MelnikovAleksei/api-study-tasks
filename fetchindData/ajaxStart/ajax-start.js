@@ -1,12 +1,17 @@
 let verseChoose = document.querySelector('select');
 let poemDisplay = document.querySelector('pre');
 
+verseChoose.onchange = function () {
+    const verse = verseChoose.value;
+    updateDisplay(verse)
+}
+
 function updateDisplay(verseChoose) {
     const verse = verseChoose.value;
     verse = verse.replace(" ", "");
     verse = verse.toLowerCase();
     let url = verse + '.txt';
-    
+
     let request = new XMLHttpRequest();
     
     request.open('get', url)
@@ -16,8 +21,6 @@ function updateDisplay(verseChoose) {
     }
     request.send();
 }
-
-verseChoose.addEventListener('onchange', updateDisplay);
 
 updateDisplay('Verse 1');
 verseChoose.value = 'Verse 1';
