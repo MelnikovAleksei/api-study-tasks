@@ -2,7 +2,8 @@ let verseChoose = document.querySelector('select');
 let poemDisplay = document.querySelector('pre');
 
 function updateDisplay(verseChoose) {
-    let url = verseChoose.value.replace(' ', '').toLowerCase() + '.txt';
+    let verse = verseChoose.value.replace(' ', '').toLowerCase() + '.txt';
+    let url = verse;
     let request = new XMLHttpRequest();
     
     request.open('get', url)
