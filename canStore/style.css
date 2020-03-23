@@ -29,38 +29,40 @@ footer ul {
     list-style: disc;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-form div {
-    margin: 1rem;
-}
-
-select {
-    width: 60%;
-    height: 2rem;
-}
-
-label {
-    align-self: center;
-    margin-right: 0.5rem;
-}
-
-input {
-    height: 1.5rem;
-}
-
-form div button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    align-self: center;
-    background-color: black;
-    color: yellow;
-    border-radius: 0.5rem;
-}
+    aside {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+            
+      label, select, input {
+        display: block;
+      }
+      
+      label {
+        margin: 1.5rem 0 0.5rem 0;
+      }
+      
+      select, input, button {
+        width: 100%;
+      }
+      
+      input {
+        background: black;
+        color: yellow;
+        border: none;
+        height: 1.5rem;
+      }
+      
+      button {
+        background: black;
+        color: yellow;
+        border: none;
+        border-radius: 10px;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+      }
 
 header {
     width: 100%;
@@ -83,6 +85,8 @@ header img {
 
 aside {
     width: 30%;
+    display: flex;
+
 }
 
 main {
@@ -125,9 +129,8 @@ main section div {
     padding: 0 1rem 0 1rem;
 }
 
-body div {
+body > div {
     display: flex;
-    flex-direction: row;
 }
 
 @media screen and (max-width: 900px) {
@@ -150,9 +153,7 @@ body div {
         width: 100%;
         height: 1.2rem;
     }
-    label {
-        margin: 1rem;
-    }
+    
     header {
         height: 3rem;
     }
