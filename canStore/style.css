@@ -52,6 +52,7 @@ footer ul {
         color: yellow;
         border: none;
         height: 1.5rem;
+        text-align: center;
       }
       
       button {
@@ -60,6 +61,7 @@ footer ul {
         border: none;
         border-radius: 10px;
         margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         padding: 1rem;
         font-size: 1rem;
       }
@@ -97,25 +99,29 @@ main {
 }
 
 main section {
-    width: 40%;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
 }
 
 h2 {
-    font-size: 1.5rem;
-}
-
-.icon {
-    color: black;
+    font-size: 1rem;
+    color: yellow;
     height: 2rem;
+    padding: 1rem 0 0.5rem 0.5rem;
 }
 
-.productImage {
+p {
+    text-align: right;
+    height: 2rem;
+    color: yellow;
+    padding: 0 0.5rem 0 0;
+}
+
+img {
     width: 100%;
-}
-
-main section p {
-
 }
 
 main section div {
@@ -143,7 +149,7 @@ body > div {
     aside {
         border: none;
     }
-    form div {
+    aside div {
         margin: 0 1rem 0 1rem;
     }
     button {
@@ -175,11 +181,11 @@ body > div {
         width: 100%;
     }
 
-    form div label {
+    aside div label {
         font-size: 1.2rem;
     }
 
-    form div button {
+    aside div button {
         padding: 0.4rem 0.7rem;
         font-size: 1rem;
         align-self: center;
@@ -204,10 +210,7 @@ body > div {
     header {
         height: 2rem;
     }
-    main section {
-        width: 80%;
-    }
-    form div button {
+    aside div button {
         padding: 0.5rem 1rem;
         font-size: 1rem;
         align-self: center;

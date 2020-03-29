@@ -1,7 +1,7 @@
 let category = document.querySelector('select');
 let searchTerm = document.querySelector('input');
 let button = document.querySelector('button');
-let productsDiv = document.querySelector('.productsDiv');
+let main = document.querySelector('main');
 let categoryGroup = [];
 let finalCategory = [];
 let lastCategory;
@@ -20,10 +20,10 @@ fetch('products.json')
         };
 
         function initialize() {
-            clearDisplay()
             if (lastCategory === category.value && lastSearch === searchTerm.value) {
                 return
             }
+            clearDisplay()
             categoryGroup = [];
             for (let i = 0; i < products.length; i++) {
                 const product = products[i];   
@@ -89,14 +89,14 @@ function showProduct(product, objectURL) {
     image.src = objectURL;
     image.alt = product.name;
 
-    productsDiv.appendChild(productSection)
+    main.appendChild(productSection)
     productSection.appendChild(h2);
     productSection.appendChild(paragraph);
     productSection.appendChild(image);   
 }
 
 function clearDisplay() {
-    while (productsDiv.firstChild) {
-        productsDiv.removeChild(productsDiv.firstChild);
+    while (main.firstChild) {
+        main.removeChild(main.firstChild);
     }
 }
