@@ -42,6 +42,7 @@ p {
 }
 span {
     background-color: bisque;
+    margin: 0.2rem;
 }
 .wrapper {
     display: flex;
