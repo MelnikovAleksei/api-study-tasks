@@ -30,13 +30,12 @@ nav button {
     width: 49%;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 h2, a {
     margin: 0.3rem;
 }
 p {
-    margin: 0.5rem 0 0.5rem 0;
     line-height: 1.4rem;
     margin: 0.2rem;
 }
@@ -58,7 +57,7 @@ span {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0.5rem;
     border: 0.1rem solid black;
 }
