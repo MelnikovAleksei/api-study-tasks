@@ -8,14 +8,26 @@
             margin: 0;
             overflow: hidden;
         }
+       
     </style>
     <title>Canvas draw app</title>
 </head>
 <body>
     <div class="toolbar">
-        <input type="color" aria-label="Select pen color">
+        <label for="penColor">Select pen color</label>
+        <input type="color" class="penColor" aria-label="Select pen color">
+        
+        <label for="backgroundColor">Select color fill end clear</label>
+        <input type="color" aria-label="Select color fill" value="#FFFFFF" class="backgroundColor">
+        
         <input type="range" min="1" max="50" value="25" aria-label="Select pen size"><span class="output">25</span>
-        <button>Clear</button>
+        <button class="clearButton">Clear</button>
+        <!-- 
+        <button class="cancelButton">Cancel</button>
+        
+        <button class="returnButton">Return</button>
+
+        -->
     </div>
     <span></span>
     <canvas class="myCanvas"></canvas>
