@@ -10,27 +10,25 @@
 </head>
 <body>
     <header>
-        <h1>IndexedDB notes demo</h1>
+        <h1>IndexedDB notes</h1>
+        <button id="showHideFormBtn">+</button>
     </header>
     <main>
+        <section class="new-note">
+            <form>
+                <label for="tittle">Tittle</label>
+                <input type="text" name="tittle" id="tittle">
+                <label for="body">Note text</label>
+                <input name="body" id="body"></input>
+                <button id="createNewNoteButton">Create new note</button>
+            </form>
+        </section>
         <section class="notes-display">
             <ul>
                 
             </ul>
         </section>
-        <section class="new-note">
-            <h2>Enter a new note bellow</h2>
-            <form>
-                <label for="tittle">Tittle</label>
-                <input type="text" name="tittle" id="tittle">
-                <label for="body">Note text</label>
-                <textarea name="body" id="body" cols="20" rows="40"></textarea>
-                <button id="createNewNoteButton">Create new note</button>
-            </form>
-        </section>
+
     </main>
-    <footer>
-        <p>Copyright nobody. Use the code as you like.</p>
-    </footer>
 </body>
 </html>

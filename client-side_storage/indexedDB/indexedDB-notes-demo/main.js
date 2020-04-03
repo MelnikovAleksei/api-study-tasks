@@ -3,6 +3,28 @@ const form = document.querySelector('form');
 const inputTittle = document.querySelector('#tittle');
 const inputText = document.querySelector('#body');
 const createNewNoteBtn = document.querySelector('#createNewNoteButton');
+const showHideFormBtn = document.querySelector('#showHideFormBtn');
+let width = window.innerWidth;
+let heigth = window.innerHeight;
+let displayed = false;
+
+function showHideForm() {
+    if (displayed) {
+        form.style.display = 'none';
+        notes.style.opacity = 1;
+        displayed = false
+    } else {
+        form.style.display = 'flex'
+        inputTittle.focus();
+        notes.style.opacity = 0.1;
+        displayed = true;
+    }
+}
+
+showHideFormBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    showHideForm();
+})
 
 let db;
 
@@ -38,6 +60,8 @@ form.addEventListener('submit', addData);
 function addData(e) {
 
     e.preventDefault()
+
+    showHideForm()
 
     let newItem = {
         tittle: inputTittle.value,
