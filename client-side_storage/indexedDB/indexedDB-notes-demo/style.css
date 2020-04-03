@@ -11,7 +11,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
 }
-h1, h2 {
+h1, h2, label{
     text-align: center;
 }
 h1, h2, label, input, textarea, #createNewNoteButton, footer {
