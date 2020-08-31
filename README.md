@@ -6,5 +6,5 @@
   * [Client side storage (IndexedDB)](https://melnikovaleksei.github.io/api-study-tasks/client-side_storage/indexedDB/indexedDB-notes-demo/)
   * [Audio-Video](https://melnikovaleksei.github.io/api-study-tasks/audio-video/index.html)
   * Third party: 
-    * [NY-Tymes](https://melnikovaleksei.github.io/api-study-tasks/thirdPartyApi/ny-times-api/index.html) 
+    * [NY-Times](https://melnikovaleksei.github.io/api-study-tasks/thirdPartyApi/ny-times-api/index.html) 
     * [Map](https://melnikovaleksei.github.io/api-study-tasks/thirdPartyApi/map/index.html)
