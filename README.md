@@ -9,4 +9,4 @@
   * Video API - ["Video Player" (GitHub Pages)](https://melnikovaleksei.github.io/api-study-tasks/audio-video/index.html) - видео-плеер с возможностью пуска, паузы, остановки и перемотки видео 
   * Third party API: 
     * New York Times API - ["NY-Times" (GitHub Pages)](https://melnikovaleksei.github.io/api-study-tasks/thirdPartyApi/ny-times-api/index.html) - веб-приложение с возможностью поиска новостей в New York Times 
-    * Mapquest API - ["Mapquest" (GitHub Pages)](https://melnikovaleksei.github.io/api-study-tasks/thirdPartyApi/map/index.html)
+    * Mapquest API - ["Mapquest" (GitHub Pages)](https://melnikovaleksei.github.io/api-study-tasks/thirdPartyApi/map/index.html) - карта с базовым функционалом 
